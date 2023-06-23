@@ -179,7 +179,7 @@ pine_frontend::token_type_t pine_frontend::handle_string(pine_frontend::scanner 
 }
 
 
-// This does not check to make sure that the string inside of `[]` is valid and does not the values.
+// This does not check to make sure that the string inside of `[]` is valid and does not lex or parse the values.
 //  In other words, [1, 2, 3] is valid, but [1 2 3,,, 6] is not, but both will lex to token_type_t::LIST with the strings `[1, 2 3]` and `[1 2 3,,, 6]` stored respectively.
 //  We will handle lexing the inside of the `[]` and checking the syntax later before we type check it.
 // TODO: consider whether or not we should handle syntax errors here or later.
