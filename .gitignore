@@ -1,0 +1,5 @@
+build/
+.vscode/
+
+# temporary name of outputted binary file:
+test
